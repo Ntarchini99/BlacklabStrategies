@@ -1,0 +1,39 @@
+.lang-toggle-switcher {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 3;
+    gap: .3rem
+}
+
+.lang-toggle-switcher div img {
+    width: 26px;
+    transition: .5s;
+}
+
+.toggle-on {
+    align-items: center;
+}
+
+.toggle-off {
+    scale: 0.8;
+    opacity: 0.4 !important;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .lang-toggle-switcher{
+        top: .5rem;
+        right: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .lang-toggle-switcher{
+        right: 5rem;
+    }
+}

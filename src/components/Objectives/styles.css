@@ -1,0 +1,114 @@
+@keyframes grow {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.25;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.section-objectivos {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 50.5rem;
+    margin-top: 12%;
+    margin-bottom: -5%;
+    background-position-x: 36rem;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+        content: url(/src/assets/img/degrade-black.svg);
+        z-index: 2;
+        position: absolute;
+        left: 25rem;
+    }
+
+}
+
+.objectives-bg {
+    position: relative;
+    float: right;
+    scale: 1.25;
+}
+
+.animateGrow {
+    animation: grow 1.75s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.animateFade {
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.title-info-container {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: #ffffff;
+    text-align: start;
+    margin-left: 8rem;
+    top: 15%;
+    z-index: 2;
+}
+
+.title-object {
+    font-size: 3.5rem;
+    font-weight: 800;
+    width: 290px;
+}
+
+.p-object {
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.span-object {
+    font-weight: 800;
+    font-size: 2.25rem;
+    width: fit-content;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 2rem;
+    color: #01e481;
+    opacity: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    .section-objectivos {
+        margin-bottom: -6%;
+        
+        &::before {
+            left: 5rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1300px) {
+    .section-objectivos::before {
+        left: 20rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .section-objectivos::before {
+        left: 60rem;
+    }
+}
