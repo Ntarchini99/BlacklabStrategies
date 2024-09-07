@@ -80,7 +80,130 @@
 }
 
 
-@media (min-width: 992px) and (max-width: 1024px) {
+
+@media (min-width: 360px) and (max-width: 414px) {
+  
+  .section-customizable {
+      background-size: contain;
+    background-position-y: 31rem;
+  }
+
+  .title-customizable {
+    font-size: 2rem;
+  }
+  
+  .subtitle-customizable {
+    margin-top: 10%;
+    font-size: 1.2rem;
+  }
+
+  .customizable-container {
+    top: 12rem;
+  }
+
+  .customizable-card {
+    width: 350px;
+    height: 365px;
+  }
+
+  .customizable-card img {
+    height: 36%;
+  }
+
+  .customizable-card-title {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+  }
+
+  .customizable-card-text {
+    line-height: 1.7rem;
+    padding: 0 2rem 0 2rem;
+    margin-top: 3.8rem;
+  }
+}
+
+@media ( 360px <= width <= 480px ) {
+
+  .section-customizable {
+    background-size: contain;
+    min-height: 220dvh;
+    background-position-y: 31rem;
+  }
+}
+
+@media (min-width: 360px) and (min-height: 740px) {
+
+  .section-customizable {
+    min-height: 190dvh;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 736px) {
+  .section-customizable {
+    min-height: 185dvh;
+  }
+}
+
+@media (min-width: 414px) and (min-height: 846px) {
+  .section-customizable {
+    min-height: 160dvh;
+  }
+
+  .subtitle-customizable {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media ( 481px <= width <= 767px ) {
+
+  .section-customizable {
+    min-height: 140dvh;
+  }
+
+  .title-customizable {
+    font-size: 2.5rem;
+  }
+
+  .customizable-card {
+    width: 380px;
+  }
+
+  .customizable-card img {
+    height: auto;
+  }
+
+  .customizable-card-title {
+    bottom: 1.5rem;
+  }
+
+  .customizable-card-text {
+    line-height: 1.7rem;
+    bottom: 3rem;
+
+  }
+}
+@media ( 768px <= width <= 991px ) {
+
+  .section-customizable {
+    min-height: 110dvh;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+  .section-customizable {
+    min-height: 112dvh;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1075px) {
+  .section-customizable {
+    min-height: 90dvh;
+  }
+}
+
+@media ( 992px <= width <= 1024px ) {
   .customizable-card {
     width: 430px;
   }
@@ -94,13 +217,15 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1365px){
+@media ( 1200px <= width <= 1365px ) {
+
   .section-customizable {
     min-height: 126dvh;
   }
 }
 
 @media (min-width: 1200px) and (min-height: 950px) {
+
   .section-customizable {
     min-height: 103dvh;
   }
@@ -112,7 +237,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media ( 1440px <= width ) {
   .section-customizable {
     min-height: 110dvh;
   }
@@ -124,14 +249,14 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media ( 1600px <= width ) {
   .section-customizable {
     background-size: 100dvw;
     min-height: 115dvh;
   }
 }
 
-@media (min-width: 1920px) {
+@media ( 1920px <= width ) {
   .section-customizable {
     background-size: 100dvw;
     min-height: 124dvh;

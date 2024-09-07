@@ -8,13 +8,13 @@ main {
     min-height: 51rem;
     background-image: url(../../assets/img/homepage.svg);
     background-repeat: no-repeat;
-    background-position-y: -10.5rem;
+    background-position-y: -15.5rem;
+    margin-top: 13%;
 }
 
 .home-container {
     width: 585px;
     margin-left: 8%;
-    margin-top: 5%;
 }
 
 .home-title {
@@ -36,8 +36,8 @@ main {
 
 .pantallas-home {
     position: relative;
-    top: 2.5rem;
-    right: 12rem;
+    bottom: 1rem;
+    right: 12.5rem;
 }
 
 .button-container {
@@ -136,6 +136,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
 }
 
 .home-cards-title {
@@ -163,6 +164,7 @@ main {
     margin-top: 0rem;
     column-gap: 3rem;
     margin-right: 3.5%;
+    width: 100%;
 }
 
 .banner-container {
@@ -227,7 +229,220 @@ main {
     font-size: 1.5rem;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media ( 360px <= width <= 414px ) {
+    
+    .section-home {
+        margin-top: 37%;
+    }
+
+    .home-container {
+        margin-left: 5%;
+    }
+
+    .home-title {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-bottom: 5px;
+        width: 90vw;
+        top: 2rem;
+        position: relative;
+    }
+
+    .home-subtitle {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        width: 100vw;
+        position: relative;
+        top: 3rem;
+    }
+
+    .home-cards-title {
+        font-size: 2rem;
+    }
+
+    .home-cards-description {
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+
+    .button-container {
+        position: relative;
+        top: 3rem;
+    }
+
+    .green-button, .green-button-calendly {
+        width: 150px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    
+    .green-button-calendly {
+        font-size: 0.75rem;
+
+        &::before{
+            top: -109px;
+            left: -170%;
+        }
+
+        &:hover {
+            &::before{
+                left: 0%;
+            }
+        }
+    }
+
+    .pantallas-home {
+        display: none;
+    }
+
+    .section-home {
+        background-position-y: -17rem;
+        background-position-x: -4.5rem;
+    }
+
+    .home-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 5px;
+    }
+
+    .main-card {
+        width: 320px;
+        height: 395px;
+    }
+
+    .main-card--title {
+        font-size: 1.1rem;
+    }
+
+    .main-card--description {
+        overflow-y: scroll;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 4.5%;
+        margin-bottom: 1rem;
+    }
+
+    .main-card--icon {
+        width: 110px;
+    }
+
+    .banner-container{
+        display: none;
+    }
+}
+
+@media ( 415px <= width <= 575px ) {
+    
+    .section-home {
+        margin-top: 37%;
+        width: 100dvh;
+        background-size: contain;
+        background-position-y: 0rem;
+        background-position-x: -5rem;
+        min-height: 44rem;
+    }
+
+    .pantallas-home {
+        display: none;
+    }
+
+    .home-container {
+        margin-left: 2%;
+    }
+
+    .home-title {
+        font-size: 3.3rem;
+        line-height: 3.75rem;
+        margin-bottom: 5px;
+        width: 90vw;
+        position: relative;
+    }
+
+    .home-subtitle {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        width: 100vw;
+        position: relative;
+        top: 1.5rem;
+    }
+
+    .home-cards-title {
+        font-size: 2rem;
+    }
+
+    .home-cards-description {
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+
+    .button-container {
+        position: relative;
+        top: 3rem;
+    }
+
+    .green-button, .green-button-calendly {
+        width: 185px;
+        height: 40px;
+        font-size: .9rem !important;
+    }
+    
+    .green-button-calendly {
+        font-size: 0.75rem;
+
+        &::before{
+            top: -109px;
+            left: -170%;
+        }
+
+        &:hover {
+            &::before{
+                left: 0%;
+            }
+        }
+    }
+
+    .home-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 5px;
+    }
+
+    .main-card {
+        width: 320px;
+        height: 395px;
+    }
+
+    .main-card--title {
+        font-size: 1.1rem;
+    }
+
+    .main-card--description {
+        overflow-y: scroll;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 4.5%;
+        margin-bottom: 1rem;
+    }
+
+    .main-card--icon {
+        width: 110px;
+    }
+
+    .banner-container{
+        display: none;
+    }
+}
+
+@media ( 576px <= width <= 767px ) {
+}
+
+
+@media ( 768px <= width <= 991px ) {
     
     .section-home {
         background-position-x: -11rem;
@@ -283,7 +498,7 @@ main {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media ( 992px <= width <= 1024px ) {
     
     .section-home {
         background-position-x: -11rem;
@@ -337,7 +552,8 @@ main {
     }
 }
 
-@media (min-width: 1600px) and (max-width: 1900px) {
+@media ( 1600px <= width <= 1900px ) {
+    
     .section-home {
         min-height: 50rem;
         background-size: cover;
@@ -345,11 +561,12 @@ main {
     }
 }
 
-@media (min-width: 1901px) {
+@media ( 1901px <= width ) {
+
     .section-home {
         background-position-y: -18rem;
         background-size: cover;
-        min-height: 91dvh;
+        min-height: 116dvh;
     }
 
     .home-container {
@@ -358,5 +575,10 @@ main {
 
     .pantallas-home {
         width: 75rem;
+    }
+
+    .home-cards-container {
+        column-gap: 6rem;
+        row-gap: 3rem;
     }
 }

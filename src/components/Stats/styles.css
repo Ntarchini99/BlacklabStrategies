@@ -67,7 +67,156 @@
   color: #6315FF;
 }
 
-@media (992px<=width<=1024px) {
+
+
+@media (360px <= width <= 414px)  {
+  
+  .section-estadisticas {
+    margin-bottom: 40px;
+  }
+  
+  .title-estadisticas {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .subtitle-estadisticas {
+    font-size: 1.8rem;
+  }
+
+  .p-estadisticas {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .estadisticas-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .estadistica {
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 2rem;
+    padding-inline: 1.5rem;
+  }
+
+  .estadistica h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 2rem !important;
+    line-height: 2.1rem;
+  }
+
+  .estadistica-description, .estadistica-main-description {
+    font-size: 1.2rem !important;
+    line-height: 2.2rem;
+  }
+
+  .stats-text {
+    font-size: 1.2rem;
+  }
+
+  .stats-cards-container {
+    flex-direction: column;
+    margin-bottom: 55%;
+    margin-top: 20%;
+  }
+
+  .stat-card {
+    width: 360px;
+    height: 380px;
+  }
+
+  .stat-card-title {
+    bottom: .5rem;
+  }
+
+  .stat-card-text {
+    bottom: 2.5rem;
+  }
+
+  .stat-card img {
+    width: 100%;
+    height: 35%
+  }
+}
+
+
+@media (415px <= width <= 767px)  {
+
+  .section-estadisticas {
+    margin-bottom: 75px;
+  }
+
+  .title-estadisticas {
+    font-size: 2.5rem;
+  }
+
+  .subtitle-estadisticas {
+    font-size: 2.1rem;
+  }
+
+  .p-estadisticas, .stats-text {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  .estadisticas-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .estadistica {
+    text-align: center;
+    height: fit-content;
+    margin-bottom: 2rem;
+    padding-inline: 1.5rem;
+  }
+
+  .stats-cards-container {
+    flex-direction: column;
+    margin-bottom: 55%;
+    margin-top: 20%;
+  }
+
+  .stat-card {
+    width: 380px;
+  }
+
+  .stat-card-title {
+    bottom: .5rem;
+  }
+
+  .stat-card-text {
+    bottom: 2.5rem;
+  }
+
+  .stat-card img {
+    width: 100%;
+    height: 35%
+  }
+}
+
+@media (768px <= width <= 991px)  {
+  .section-estadisticas {
+    margin-top: 10rem;
+    margin-bottom: 0;
+  }
+  
+  .estadistica {
+    width: 345px;
+  }
+
+  .stats-cards-container {
+    flex-direction: column;
+  }
+}
+
+@media (992px <= width <= 1024px) {
   .estadistica {
     width: 300px;
   }

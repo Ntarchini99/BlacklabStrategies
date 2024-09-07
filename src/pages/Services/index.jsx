@@ -1,7 +1,7 @@
 import useLangContext from '../../hooks/useLangContext.jsx'
 import { whatsapp } from '../../assets/icons/index.js'
 import { ParamsCards, Objectives, Stats, StatsCards } from '../../components/index.js'
-import { bannerBg2, backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
+import {  backLabVector2, backLabVectorRight } from '../../assets/img/index.js'
 import './styles.css'
 
 const Services = () => {
@@ -14,7 +14,7 @@ const Services = () => {
         <h1 className='title-services' key={lang}>
           {lang === 'es' ? 'Nuestros Servicios' : 'Our Services'}
         </h1>
-        <span style={{ fontSize: '1.5rem', fontWeight: '700' }} key={lang+1}>
+        <span style={{ fontSize: '1.5rem', fontWeight: '700', lineHeight: '2.5rem' }} key={lang+1}>
           {lang === 'es' ? '¡Conocé el plan que mejor se adapte a lo que necesitás!' : 'Know the plan that best fits your needs!'}
         </span>
         <p 
@@ -127,7 +127,6 @@ const Services = () => {
                 <img src={whatsapp} alt="" />
               </a>
           </div>
-          <img className='secondary-banner-bg' src={bannerBg2} alt="" />
           <img className='secondary-banner-vector' src={backLabVector2} alt="" />
           <img className='services-arrow-vector' src={backLabVectorRight} alt="" />
         </div>
@@ -149,7 +148,7 @@ const Services = () => {
         </p>
         <span>
           <h2 className="subtitle-services" key={lang+15}>
-            { lang === 'es' ? 'Parémetros por default' : 'Default parameters'}
+            { lang === 'es' ? 'Parámetros por default' : 'Default parameters'}
           </h2>
         </span>
         <div className="services-container">
